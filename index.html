@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="src/css/global.css" />
+  </head>
+  <body>
+    <div class="flex flex-col justify-between h-screen">
+      <!-- header -->
+      <header class="flex justify-between items-center py-6 px-10">
+        <div
+          class="text-2xl font-bold tracking-tight bg-gradient-to-r from-rose-500 to-yellow-500 text-transparent bg-clip-text"
+        >
+          hendrairwn
+        </div>
+        <div
+          class="flex items-center gap-8 text-sm font-normal bg-zinc-500/5 text-zinc-800 rounded-full px-2 py-2"
+        >
+          <div class="link bg-white text-black px-4 py-1 rounded-full">
+            About
+          </div>
+          <div class="link">Craft</div>
+          <div class="link pr-4">Media</div>
+        </div>
+        <div class="link text-base font-semibold">Contact</div>
+      </header>
+
+      <!-- main card -->
+      <main
+        class="max-w-4xl m-auto grid grid-cols-1 gap-6 lg:grid-cols-3 lg:gap-8"
+      >
+        <!-- hero card -->
+        <div class="relative card col-span-2 h-72 pl-12">
+          <div
+            class="flex absolute items-center gap-2 bg-emerald-100 border-[1px] rounded-3xl border-emerald-500 px-3 py-2 w-fit text-xs top-6 right-6"
+          >
+            <div
+              class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"
+            ></div>
+            <div>Open for Collaboration</div>
+          </div>
+
+          <img src="/avatar.png" class="w-20 h-20 rounded-full mt-6" alt="" />
+          <div class="font-semibold pt-2 mt-2">Hendra Irawan</div>
+          <div class="text-xs">Fullstack Developer @Amazon , USA</div>
+          <div class="flex pt-3 gap-1 items-end">
+            <h1 id="heading"></h1>
+          </div>
+        </div>
+
+        <!-- twitter card -->
+        <div class="flex card bg-sky-300 justify-center items-center">
+          <a href="https://twitter.com/home">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="100"
+              height="100"
+              viewBox="0,0,256,256"
+            >
+              <g
+                fill="#ffffff"
+                fill-rule="nonzero"
+                stroke="none"
+                stroke-width="1"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+                stroke-dasharray=""
+                stroke-dashoffset="0"
+                font-family="none"
+                font-weight="none"
+                font-size="none"
+                text-anchor="none"
+                style="mix-blend-mode: normal"
+              >
+                <g transform="scale(9.84615,9.84615)">
+                  <path
+                    d="M25.85547,5.57422c-0.94141,0.41797 -1.95312,0.69922 -3.01562,0.82813c1.08203,-0.65234 1.91797,-1.67969 2.30859,-2.90625c-1.01562,0.60156 -2.14062,1.03906 -3.33594,1.27344c-0.95703,-1.01953 -2.32031,-1.65625 -3.83203,-1.65625c-2.89844,0 -5.25,2.35156 -5.25,5.25c0,0.41016 0.04688,0.8125 0.13672,1.19531c-4.36328,-0.21875 -8.23047,-2.3125 -10.82031,-5.48828c-0.45312,0.77734 -0.71094,1.67969 -0.71094,2.64453c0,1.82031 0.92578,3.42578 2.33594,4.36719c-0.86328,-0.02734 -1.67187,-0.26172 -2.37891,-0.65625c0,0.02344 0,0.04297 0,0.06641c0,2.54297 1.80859,4.66406 4.21094,5.14844c-0.44141,0.12109 -0.90234,0.18359 -1.38281,0.18359c-0.33984,0 -0.66797,-0.03125 -0.98828,-0.09375c0.66797,2.08203 2.60547,3.60547 4.90234,3.64453c-1.79297,1.41016 -4.05859,2.24609 -6.51953,2.24609c-0.42578,0 -0.83984,-0.02344 -1.25,-0.07031c2.32031,1.48828 5.08203,2.35547 8.04688,2.35547c9.65625,0 14.9375,-8 14.9375,-14.93359c0,-0.23047 -0.00391,-0.45703 -0.01562,-0.68359c1.02734,-0.73438 1.91797,-1.66016 2.62109,-2.71484"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </div>
+
+        <!-- portofolio -->
+        <div
+          class="card relative flex justify-center items-center bg-yellow-300"
+        >
+          <div
+            class="absolute bottom-6 left-6 bg-white rounded-full p-4 hover:text-center hover:text-yellow-400 cursor-pointer duration-300 ease-in-out"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+              />
+            </svg>
+          </div>
+          <div class="text-base font-semibold tracking-tighter">
+            DesignStripe mockups
+          </div>
+        </div>
+
+        <!-- form collaboration -->
+        <div class="card col-span-2 h-72">
+          <div class="pl-6 pt-2">
+            <h3 class="text-2xl font-medium">Collaboration?</h3>
+            <p class="text-xs font-light pt-3">
+              I have a strong track record of developing impactful products.
+              Let's work together!
+            </p>
+            <input
+              id="form"
+              class="pt-8"
+              type="email"
+              placeholder="email@yours.com"
+            />
+            <div class="grid justify-items-end">
+              <p class="pt-2 text-sm">Enter to blow!</p>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- footer -->
+      <footer class="text-center p-8">
+        <div>build by love 🫶🏻 by : Hendra Irawan.</div>
+      </footer>
+    </div>
+    <script src="./src/js/main.js" type="module"></script>
+  </body>
+</html>
